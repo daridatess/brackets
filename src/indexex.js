@@ -1,4 +1,14 @@
-module.exports = function check(str, bracketsConfig) {};
+function check(str, bracketsConfig) {
+  const openBracket = [];
+  const closeBracket = [];
+  for (let i = 0; i < bracketsConfig.length; i++) {
+    openBracket = bracketsConfig[i][0];
+    closeBracket = bracketsConfig[i][1];
+  }
+  console.log(openBracket, closeBracket);
+}
+
+console.log(check(str, config3));
 
 const config1 = [['(', ')']];
 const config2 = [
